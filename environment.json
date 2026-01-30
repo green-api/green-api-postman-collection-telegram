@@ -1,0 +1,32 @@
+{
+	"id": "6ac61ff0-656e-47df-8496-c48a0b91df48",
+	"name": "Green-Api Developer",
+	"values": [
+		{
+			"key": "idInstance",
+			"value": "<Ваш idInstance из личного кабинета Green API>",
+			"enabled": true
+		},
+		{
+			"key": "apiTokenInstance",
+			"value": "<Ваш apiTokenInstance из личного кабинета Green API>",
+			"enabled": true
+		},
+		{
+			"key": "apiUrl",
+			"value": "https://4100.api.green-api.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "mediaUrl",
+			"value": "https://4100.api.green-api.com",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"color": 240,
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2026-01-29T12:58:18.901Z",
+	"_postman_exported_using": "Postman/11.82.3"
+}
