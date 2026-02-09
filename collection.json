@@ -1,9 +1,9 @@
 {
   "info": {
-    "_postman_id": "efeebd6d-9147-4f3f-9922-f5620a6f55e9",
+    "_postman_id": "c77dcec9-7678-4b52-97e5-d4499147a03b",
     "name": "Green API RU Telegram",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "21629295"
+    "_exporter_id": "37785427"
   },
   "item": [
     {
@@ -14537,6 +14537,214 @@
               ],
               "cookie": [],
               "body": "\"ChatId not found\""
+            }
+          ]
+        },
+        {
+          "name": "Архивировать чат",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"chatId\": \"10000000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/waInstance{{idInstance}}/archiveChat/{{apiTokenInstance}}",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "waInstance{{idInstance}}",
+                "archiveChat",
+                "{{apiTokenInstance}}"
+              ]
+            },
+            "description": "Документация [GetContactInfo](https://green-api.com/telegram/docs/api/service/GetContactInfo/)"
+          },
+          "response": [
+            {
+              "name": "archiveChat",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"chatId\": \"10000000\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{apiUrl}}/waInstance{{idInstance}}/archiveChat/{{apiTokenInstance}}",
+                  "host": [
+                    "{{apiUrl}}"
+                  ],
+                  "path": [
+                    "waInstance{{idInstance}}",
+                    "archiveChat",
+                    "{{apiTokenInstance}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 09 Feb 2026 05:38:21 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-RateLimit-Remaining",
+                  "value": "9"
+                },
+                {
+                  "key": "X-RateLimit-Replenish-Rate",
+                  "value": "10"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "unreachable"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "body": null
+            }
+          ]
+        },
+        {
+          "name": "Разархивировать чат",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"chatId\": \"10000000\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/waInstance{{idInstance}}/unarchiveChat/{{apiTokenInstance}}",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "waInstance{{idInstance}}",
+                "unarchiveChat",
+                "{{apiTokenInstance}}"
+              ]
+            },
+            "description": "Документация [GetContactInfo](https://green-api.com/telegram/docs/api/service/GetContactInfo/)"
+          },
+          "response": [
+            {
+              "name": "unarchiveChat",
+              "originalRequest": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"chatId\": \"10000000\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{apiUrl}}/waInstance{{idInstance}}/unarchiveChat/{{apiTokenInstance}}",
+                  "host": [
+                    "{{apiUrl}}"
+                  ],
+                  "path": [
+                    "waInstance{{idInstance}}",
+                    "unarchiveChat",
+                    "{{apiTokenInstance}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": null,
+              "header": [
+                {
+                  "key": "Date",
+                  "value": "Mon, 09 Feb 2026 05:38:21 GMT"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "0"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Origin"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Method"
+                },
+                {
+                  "key": "Vary",
+                  "value": "Access-Control-Request-Headers"
+                },
+                {
+                  "key": "X-RateLimit-Remaining",
+                  "value": "9"
+                },
+                {
+                  "key": "X-RateLimit-Replenish-Rate",
+                  "value": "10"
+                },
+                {
+                  "key": "X-Cache",
+                  "value": "unreachable"
+                },
+                {
+                  "key": "Strict-Transport-Security",
+                  "value": "max-age=31536000; includeSubDomains"
+                }
+              ],
+              "cookie": [],
+              "body": null
             }
           ]
         },
