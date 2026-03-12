@@ -1787,7 +1787,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"chatId\": \"10000000\",\r\n\t\"message\": \"I use Green-API to send this message to you!\"\r\n}",
+              "raw": "{\r\n\t\"chatId\": \"10000000\",\r\n\t\"message\": \"I use Green-API to send this message to you!\",\r\n    \"typingTime\": 5000,                                           // optional\r\n    \"typingType\": \"text\",                                         // optional\r\n    \"quotedMessageId\": \"1769666251000\"                            // optional\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1985,7 +1985,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"chatId\": \"79876543210@c.us\",\r\n\t\"message\": \"I use Green-API to send this message to you!\"\r\n}",
+              "raw": "{\r\n\t\"chatId\": \"79876543210@c.us\",\r\n\t\"message\": \"I use Green-API to send this message to you!\",\r\n    \"typingTime\": 5000,                                           // optional\r\n    \"typingType\": \"text\",                                         // optional\r\n    \"quotedMessageId\": \"1769666251000\"                            // optional\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2423,7 +2423,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"chatId\": \"-10000000000000\",\r\n\t\"message\": \"I use Green-API to send this message to you!\"\r\n}",
+              "raw": "{\r\n\t\"chatId\": \"-10000000000000\",\r\n\t\"message\": \"I use Green-API to send this message to you!\",\r\n    \"typingTime\": 5000,                                           // optional\r\n    \"typingType\": \"text\",                                         // optional\r\n    \"quotedMessageId\": \"1769666251000\"                            // optional\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -2646,6 +2646,28 @@
                   "value": "horse.png",
                   "description": "Название файла",
                   "type": "text"
+                },
+                {
+                  "key": "typingTime",
+                  "value": "5000",
+                  "description": "Длительность уведомления об отправке",
+                  "type": "text",
+                  "uuid": "ce4c59f2-b1e7-4bf1-9665-e60f771fe88b"
+                },
+                {
+                  "key": "typingType",
+                  "value": "upload_photo",
+                  "description": "Тип уведомления об отправке",
+                  "type": "text",
+                  "uuid": "83dd9a79-c2ea-4bb0-ac39-ceb893e4efeb"
+                },
+                {
+                  "key": "quotedMessageId",
+                  "value": "1769666251000",
+                  "description": "Цитируемое сообщение",
+                  "type": "text",
+                  "uuid": "0663e213-25dd-4d01-a0be-08177be0c936",
+                  "disabled": true
                 }
               ]
             },
@@ -2945,7 +2967,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"chatId\": \"10000000\",\r\n\t\"urlFile\": \"https://4100.api.green-api.com/download/4100/95917017eCsVpZE2Uiph7eCsVpZE2Uiph.jpg\",\r\n\t\"fileName\": \"horse.jpg\",\r\n\t\"caption\": \"лошадка\"\r\n}",
+              "raw": "{\r\n    \"chatId\": \"10000000\",\r\n\t\"urlFile\": \"https://4100.api.green-api.com/download/4100/95917017eCsVpZE2Uiph7eCsVpZE2Uiph.jpg\",\r\n\t\"fileName\": \"horse.jpg\",\r\n\t\"caption\": \"лошадка\",\r\n    \"typingTime\": 5000,                                           // optional\r\n    \"typingType\": \"upload_photo\",                                 // optional\r\n    \"quotedMessageId\": \"1769666251000\"                            // optional\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -3506,7 +3528,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n\t\"chatId\": \"10000000\",\r\n    \"latitude\": 51.1035035,\r\n    \"longitude\": 71.3996933\r\n}",
+              "raw": "{\r\n\t\"chatId\": \"10000000\",\r\n    \"latitude\": 51.1035035,\r\n    \"longitude\": 71.3996933,\r\n    \"typingTime\": 5000,                                           // optional\r\n    \"typingType\": \"choose_location\",                              // optional\r\n    \"quotedMessageId\": \"1769666251000\"                            // optional\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -3650,7 +3672,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n  \"chatId\": \"10000000\",\r\n  \"contact\": {\r\n    \"phoneContact\": \"79876543210\",\r\n    \"firstName\": \"Jane\",\r\n    \"lastName\": \"Doe\"\r\n  }\r\n}\r\n",
+              "raw": "{\r\n  \"chatId\": \"10000000\",\r\n  \"contact\": {\r\n    \"phoneContact\": \"79876543210\",\r\n    \"firstName\": \"Jane\",\r\n    \"lastName\": \"Doe\",                                          // optional\r\n    \"company\": \"Green-API\"                                      // optional\r\n  },\r\n  \"typingTime\": 5000,                                           // optional\r\n  \"typingType\": \"choose_contact\",                               // optional\r\n  \"quotedMessageId\": \"1769666251000\"                            // optional\r\n}\r\n",
               "options": {
                 "raw": {
                   "language": "json"
@@ -3794,7 +3816,7 @@
             ],
             "body": {
               "mode": "raw",
-              "raw": "{\r\n    \"chatId\": \"-12345678909876\",\r\n    \"message\": \"Please choose the color:\",\r\n    \"options\": [\r\n        { \"optionName\": \"green\" },\r\n        { \"optionName\": \"red\"   },\r\n        { \"optionName\": \"blue\"  }\r\n    ],\r\n    \"multipleAnswers\": false\r\n}\r\n",
+              "raw": "{\r\n    \"chatId\": \"-12345678909876\",\r\n    \"message\": \"Please choose the color:\",\r\n    \"options\": [\r\n        { \"optionName\": \"green\" },\r\n        { \"optionName\": \"red\"   },\r\n        { \"optionName\": \"blue\"  }\r\n    ],\r\n    \"multipleAnswers\": false,                                     // optional\r\n    \"typingTime\": 5000,                                           // optional\r\n    \"typingType\": \"text\",                                         // optional\r\n    \"quotedMessageId\": \"1769666251000\"                            // optional\r\n}\r\n",
               "options": {
                 "raw": {
                   "language": "json"
@@ -3963,6 +3985,89 @@
                 }
               ],
               "body": "{\r\n    \"statusCode\": 400,\r\n    \"timestamp\": \"2025-08-15T07:04:56.987Z\",\r\n    \"path\": \"/waInstance4100000000/sendMessage/abcdef12345fghij67890klmno09876pqrstu54321vwxyz\",\r\n    \"message\": \"Validation failed. Details: Polls can only be sent to groups or channels, not private chats\"\r\n}"
+            }
+          ]
+        },
+        {
+          "name": "Переслать сообщения",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\t\r\n    \"chatId\": \"10000000\",\r\n    \"chatIdFrom\": \"10000001\",\r\n\t\"messages\": [\"1769666251000\", \"1769666251001\", \"1769666251002\"],\r\n    \"hideAuthor\": false,                                          // optional\r\n    \"typingTime\": 5000,                                           // optional\r\n    \"typingType\": \"text\"                                          // optional\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{apiUrl}}/waInstance{{idInstance}}/ForwardMessages/{{apiTokenInstance}}",
+              "host": [
+                "{{apiUrl}}"
+              ],
+              "path": [
+                "waInstance{{idInstance}}",
+                "ForwardMessages",
+                "{{apiTokenInstance}}"
+              ]
+            }
+          },
+          "response": [
+            {
+              "name": "forwardMessages",
+              "originalRequest": {
+                "method": "VIEW",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\t\r\n    \"chatId\": \"10000000\",\r\n    \"chatIdFrom\": \"10000001\",\r\n\t\"messages\": [\"1769666251000\", \"1769666251001\", \"1769666251002\"],\r\n    \"hideAuthor\": false,                                          // optional\r\n    \"typingTime\": 5000,                                           // optional\r\n    \"typingType\": \"text\"                                          // optional\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{apiUrl}}/waInstance{{idInstance}}/forwardMessages/{{apiTokenInstance}}",
+                  "host": [
+                    "{{apiUrl}}"
+                  ],
+                  "path": [
+                    "waInstance{{idInstance}}",
+                    "forwardMessages",
+                    "{{apiTokenInstance}}"
+                  ]
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "_postman_previewlanguage": "json",
+              "header": [
+                {
+                  "key": "Server",
+                  "value": "nginx"
+                },
+                {
+                  "key": "Date",
+                  "value": "Fri, 17 Apr 2020 13:14:58 GMT"
+                },
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                },
+                {
+                  "key": "Content-Length",
+                  "value": "41"
+                },
+                {
+                  "key": "Connection",
+                  "value": "keep-alive"
+                }
+              ],
+              "cookie": [],
+              "body": "{\n    \"messages\": [\n        \"1769666251009\", \n        \"1769666251008\", \n        \"1769666251007\"\n    ]\n}"
             }
           ]
         }
@@ -14596,7 +14701,7 @@
               },
               "status": "OK",
               "code": 200,
-              "_postman_previewlanguage": null,
+              "_postman_previewlanguage": "Text",
               "header": [
                 {
                   "key": "Date",
@@ -14640,7 +14745,7 @@
                 }
               ],
               "cookie": [],
-              "body": null
+              "body": ""
             }
           ]
         },
@@ -14700,7 +14805,7 @@
               },
               "status": "OK",
               "code": 200,
-              "_postman_previewlanguage": null,
+              "_postman_previewlanguage": "Text",
               "header": [
                 {
                   "key": "Date",
